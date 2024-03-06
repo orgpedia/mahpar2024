@@ -1,0 +1,22 @@
+src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
+1
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+  exec_task: word_recognizer 
+  exec_task: pdftable_finder 
+	==Total:2 Errors=2 TableEmptyBodyCellError=2
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	extract_order_number:202402271500283915.pdf: >शासन निर्णय क्रमांक< >आस्थापना-०४२२/प्र.क्र.१७७/पाच<
+	elapsed_time:202402271500283915.pdf: 0.000096
+  exec_task: doc_translator_hf 
+    Paras: #36 Sentences: #22
+	[0]  #words: 24 #sentences: 11
+	After generate: 2 MB
+	[0]  #words: 264 #sentences: 34
+	After generate: 3 MB
+	[1]  #words: 24 #sentences: 2
+	After generate: 3 MB
+  exec_task: text_writer 
+#docs: 1 #processed: 1
